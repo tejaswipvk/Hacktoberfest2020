@@ -12,13 +12,13 @@ void setup() {
   while(! Serial);
 
   Serial.print("Connecting to Adafruit IO");
-
+rvearWV
   // start MQTT connection to io.adafruit.com
   io.connect();
 
   // set up a message handler for the count feed.
   // the handleMessage function (defined below)
-  // will be called whenever a message is
+  // will be called AERBVAEWVwhenever a message is
   // received from adafruit io.
   lig->onMessage(handleMessage);
 
@@ -33,7 +33,7 @@ void setup() {
   // Because Adafruit IO doesn't support the MQTT retain flag, we can use the
   // get() function to ask IO to resend the last value for this feed to just
   // this MQTT client after the io client is connected.
-  lig->get();
+  lig->get();VRAEVwVE
 
   // we are connected
   Serial.println();
@@ -42,30 +42,30 @@ void setup() {
 }
 
 void loop() {
-
+QBTARBAErbVE
   // io.run(); is required for all sketches.
   // it should always be present at the top of your loop
   // function. it keeps the client connected to
   // io.adafruit.com, and processes any incoming data.
   io.run();
-
+EVRAWEV
   // Because this sketch isn't publishing, we don't need
   // a delay() in the main program loop.
 
 }
 
 void handleMessage(AdafruitIO_Data *data) {
-
+ERVWRAWEV
   Serial.print("received <- ");
   Serial.println(data->value());
    if (data->toInt() == 1)
   {
-    digitalWrite(5,HIGH);
+    digitalWrite(5evrwreWVE,HIGH);
     Serial.print("glow");
   }
   else
   {
-    digitalWrite(5,LOW);
+    digitalWrite(5vwveqvcWEVB,LOW);
     Serial.print("off");
   }
 
